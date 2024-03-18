@@ -39,8 +39,6 @@ class PersonScreenViewModel @Inject constructor(
                     )
                 )
             }
-
         }
     }
-
 }

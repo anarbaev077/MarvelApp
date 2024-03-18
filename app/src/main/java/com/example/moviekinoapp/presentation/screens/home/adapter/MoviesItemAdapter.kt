@@ -52,7 +52,7 @@ class MoviesItemAdapter(
                 MovieItemTypes.TRENDING -> R.layout.movie_default_items
                 MovieItemTypes.TOP_RATED -> R.layout.movie_default_items
                 MovieItemTypes.UPCOMING -> R.layout.movie_default_items
-                MovieItemTypes.FAVORITES -> R.layout.favorites_items
+                MovieItemTypes.FAVORITES -> R.layout.movie_default_items
             },
             parent,
             false

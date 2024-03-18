@@ -1,5 +1,6 @@
 package com.example.moviekinoapp.presentation.screens.favorite
 
+import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.domain.use_cases.locale.fetcht.all.saved.FetchAllSavedUseCase

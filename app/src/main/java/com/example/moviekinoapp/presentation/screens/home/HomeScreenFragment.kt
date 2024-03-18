@@ -1,6 +1,7 @@
 package com.example.moviekinoapp.presentation.screens.home
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -103,9 +104,9 @@ class HomeScreenFragment : Fragment(), ItemOnClickListeners {
     private fun setupTrendingTodayMoviesUi() = with(binding) {
         trendingTodayMoviesBlock.moviesTrendingTodayRv.adapter = trendingTodayAdapter
         topRatedMoviesBlock.moviesTrendingTodayRv.adapter = topRatedAdapter
-        topRatedMoviesBlock.listHeader.text = "Top Rated"
+        topRatedMoviesBlock.listHeader.text = "Топовые"
         upcomingMoviesBlock.moviesTrendingTodayRv.adapter = upcomingAdapter
-        upcomingMoviesBlock.listHeader.text = "Upcoming Movies"
+        upcomingMoviesBlock.listHeader.text = "Скоро Выйдут"
     }
 
     private fun submitListAdapters(action: HomeScreenAction.FetchAllMovies) {
@@ -127,6 +128,7 @@ class HomeScreenFragment : Fragment(), ItemOnClickListeners {
     }
 
     override fun onMovieLongClick(movieDomainModel: MovieDomainModel) {
+        Log.d("ereh89","$movieDomainModel")
         viewModel.onEvent(HomeScreenEvent.OnSaveMovieToCache(movieDomainModel))
     }
 

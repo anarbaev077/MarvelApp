@@ -9,6 +9,8 @@
         android:id="@+id/tab_layout_detail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:tabSelectedTextColor="@color/erdColor"
+        app:tabIndicator="@color/erdColor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">

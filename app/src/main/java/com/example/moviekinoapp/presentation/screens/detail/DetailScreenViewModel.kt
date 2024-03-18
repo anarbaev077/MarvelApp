@@ -42,7 +42,6 @@ class DetailScreenViewModel @Inject constructor(
                         detailMovie = detailMovie.getOrNull() ?: MovieDetailModelDomain.unknown
                     )
                 )
-
             }
         }
     }

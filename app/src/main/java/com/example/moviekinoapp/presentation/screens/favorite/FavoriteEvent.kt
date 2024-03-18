@@ -1,4 +1,4 @@
-package com.example.netfilxcloneapp.presentation.screens.favorite
+package com.example.moviekinoapp.presentation.screens.favorite
 
 
 sealed interface FavoriteEvent {

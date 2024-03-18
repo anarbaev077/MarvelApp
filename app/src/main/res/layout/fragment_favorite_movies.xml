@@ -39,7 +39,8 @@
         android:orientation="vertical"
         android:layout_gravity="center"
         android:paddingHorizontal="12dp"
-        tools:listitem="@layout/favorites_items"
+        app:spanCount="2"
+        tools:listitem="@layout/movie_default_items"
         app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"/>
 
 </LinearLayout>
