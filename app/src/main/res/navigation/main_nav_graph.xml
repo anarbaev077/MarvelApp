@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/home_destination">
+
+    <fragment
+        android:id="@+id/home_destination"
+        android:name="com.example.moviekinoapp.presentation.screens.home.HomeScreenFragment"
+        android:label="fragment_home_screen"
+        tools:layout="@layout/fragment_home_screen" >
+        <action
+            android:id="@+id/action_home_destination_to_detail_destination"
+            app:destination="@id/detail_destination" />
+        <action
+            android:id="@+id/action_home_destination_to_personScreenFragment"
+            app:destination="@id/person_destination" />
+        <action
+            android:id="@+id/action_home_destination_to_favoriteMoviesFragment"
+            app:destination="@id/favorite_destination" />
+        <action
+            android:id="@+id/action_home_destination_to_searchFragment"
+            app:destination="@id/search_destination" />
+    </fragment>
+    <fragment
+        android:id="@+id/detail_destination"
+        android:name="com.example.moviekinoapp.presentation.screens.detail.DetailScreenFragment"
+        android:label="fragment_detail_screen"
+        tools:layout="@layout/fragment_detail_screen" />
+    <fragment
+        android:id="@+id/person_destination"
+        android:name="com.example.moviekinoapp.presentation.screens.person.PersonScreenFragment"
+        android:label="fragment_person_screen"
+        tools:layout="@layout/fragment_person_screen" />
+    <fragment
+        android:id="@+id/favorite_destination"
+        android:name="com.example.moviekinoapp.presentation.screens.favorite.FavoriteMoviesFragment"
+        android:label="fragment_favorite_movies"
+        tools:layout="@layout/fragment_favorite_movies" >
+        <action
+            android:id="@+id/action_favoriteMoviesFragment_self"
+            app:destination="@id/favorite_destination" />
+        <action
+            android:id="@+id/action_favorite_destination_to_detail_destination"
+            app:destination="@id/detail_destination" />
+    </fragment>
+    <fragment
+        android:id="@+id/search_destination"
+        android:name="com.example.moviekinoapp.presentation.screens.search.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_search_destination_to_detail_destination"
+            app:destination="@id/detail_destination" />
+    </fragment>
+</navigation>

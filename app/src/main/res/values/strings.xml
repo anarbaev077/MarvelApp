@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">MovieKinoApp</string>
+    <string name="home_txt">Home</string>
+    <string name="categories_txt">Search</string>
+    <string name="actors_txt">Actors</string>
+    <string name="favorite_txt">Favorite</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="homescreen_txt_for_screen">HomeScreen</string>
+    <string name="latest_movies_txt">Последние киношки</string>
+    <string name="trending_today_txt">Тренды на сегодня</string>
+    <string name="no_trailer">No Trailer !</string>
+    <string name="trailer">Трейлеры</string>
+    <string name="cast">Актеры</string>
+    <string name="More">Еще</string>
+    <string name="popular_actors_today">Популярные актеры:</string>
+    <string name="release_date">Было опубликовано:</string>
+    <string name="vote_average">Популярность:</string>
+    <string name="runtime">Время:</string>
+    <string name="favorite_movies">Ваши киношки:</string>
+    <string name="nn">ТРЕЙЛЕРЫ БУДУТ ОБНОВЛЕНЫ В 2024 . 07 . 01</string>
+    <string name="kk">ФУНКЦИЯ ЕЩЕ, БУДУТ ОБНОВЛЕНЫ В 2024 . 07 . 01</string>
+</resources>

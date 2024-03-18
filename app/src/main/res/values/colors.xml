@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="shimmerColor">#C2C2C2</color>
+    <color name="light_background">#FFFFFF</color>
+    <color name="dark_background">#191C20</color>
+    <color name="taskerBlue">#006CFF</color>
+    <color name="taskerGray">#252A31</color>
+    <color name="grey">#EBEFF5</color>
+    <color name="green">#61DEA4</color>
+    <color name="red">#F45E6D</color>
+    <color name="yellow">#FFE761</color>
+    <color name="purple">#B678FF</color>
+    <color name="erdColor">#DFB6B2</color>
+    <color name="black_ground">#021024</color>
+</resources>
