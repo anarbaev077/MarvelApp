@@ -12,7 +12,7 @@ import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import com.example.domain.models.movie_list_domain.MovieDomainModel
 import com.example.moviekinoapp.R
-import com.example.moviekinoapp.databinding.FragmentSearchBinding
+import com.example.moviekinoapp.databinding.FragmentSearchScreenBinding
 import com.example.moviekinoapp.presentation.screens.home.HomeScreenEvent
 import com.example.moviekinoapp.presentation.screens.home.HomeScreenFragment
 import com.example.moviekinoapp.presentation.screens.home.HomeScreenViewModel
@@ -26,8 +26,8 @@ import kotlinx.coroutines.launch
 @AndroidEntryPoint
 class SearchFragment : Fragment(), ItemOnClickListeners {
 
-    private val binding: FragmentSearchBinding by lazy {
-        FragmentSearchBinding.inflate(layoutInflater)
+    private val binding: FragmentSearchScreenBinding by lazy {
+        FragmentSearchScreenBinding.inflate(layoutInflater)
     }
 
     private val searchAdapter: MoviesItemAdapter by lazy {

@@ -26,6 +26,7 @@ class CastAdapter : ListAdapter<CastDomain, CastAdapter.CastViewHolder>(CastItem
                 .load(model.profilePath)
                 .into(actorPoster)
 
+
             popularityActors.text = model.popularity.toString()
             actorName.text = model.name
             characterName.text = model.character
@@ -34,7 +35,7 @@ class CastAdapter : ListAdapter<CastDomain, CastAdapter.CastViewHolder>(CastItem
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CastViewHolder {
         val itemView = LayoutInflater.from(parent.context)
-            .inflate(R.layout.cast_actors_items, parent, false)
+            .inflate(R.layout.cast_items, parent, false)
         return CastViewHolder(itemView)
     }
 

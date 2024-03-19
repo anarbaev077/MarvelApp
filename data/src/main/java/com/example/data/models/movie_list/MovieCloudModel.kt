@@ -19,6 +19,8 @@ data class MovieCloudModel(
     val originalLanguage: String?,
     @SerializedName("title")
     val title: String?,
+    @SerializedName("runtime")
+    val runtime: Int,
     @SerializedName("backdrop_path")
     val backdropPath: String?,
     @SerializedName("popularity")

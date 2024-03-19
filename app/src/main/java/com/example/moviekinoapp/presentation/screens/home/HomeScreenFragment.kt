@@ -68,15 +68,13 @@ class HomeScreenFragment : Fragment(), ItemOnClickListeners {
                     is HomeScreenAction.UpdateScreenHideShimmer -> setupUiWhenUpdateScreenAction()
                     is HomeScreenAction.FetchAllMovies -> submitListAdapters(action)
                     is HomeScreenAction.NavigateToDetailsScreen -> navigateToDetailScreen(action)
-                    is HomeScreenAction.ShowSuccessSnackBar -> showSuccessSnackbar("Ваше кино сохранено")
+                    is HomeScreenAction.ShowSuccessSnackBar -> showSuccessSnackBar("Ваше кино сохранено")
                 }
             }
         }
     }
 
-    private fun showSuccessSnackbar(
-        message: String
-    ) {
+    private fun showSuccessSnackBar(message: String) {
         Snackbar.make(
             binding.root,
             message,
@@ -128,7 +126,6 @@ class HomeScreenFragment : Fragment(), ItemOnClickListeners {
     }
 
     override fun onMovieLongClick(movieDomainModel: MovieDomainModel) {
-        Log.d("ereh89","$movieDomainModel")
         viewModel.onEvent(HomeScreenEvent.OnSaveMovieToCache(movieDomainModel))
     }
 

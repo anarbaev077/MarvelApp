@@ -76,9 +76,6 @@ class DetailScreenFragment : Fragment() {
         binding.moviePosterForDetail.layoutParams.width = ViewGroup.LayoutParams.MATCH_PARENT
         binding.title.text = action.detailMovie.title
         binding.movieDescription.text = action.detailMovie.overview
-        bindingMore.releaseDateTv.text = action.detailMovie.releaseDate
-        bindingMore.voteAverageTv.text = action.detailMovie.voteAverage.toString()
-        bindingMore.runtimeTv.text = action.detailMovie.runtime.toString()
     }
 
     private fun horizontalPager(movieId: Int?) {

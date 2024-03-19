@@ -7,3 +7,8 @@ enum class MovieItemTypes {
     UPCOMING,
     FAVORITES
 }
+
+
+enum class MoreMovieItemTypes {
+    TOP_RATED
+}

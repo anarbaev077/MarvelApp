@@ -18,5 +18,5 @@ fun MovieCloudModel.toDomainModel() = MovieDomainModel(
     voteCount = this.voteCount,
     video = this.video,
     rating = this.rating,
-    genres = this.genres
+    genres = this.genres,
 )

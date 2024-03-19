@@ -68,6 +68,7 @@ class FavoriteMoviesFragment : Fragment(), ItemOnClickListeners {
     
     private fun fetchFavoritesMovies(action: FavoriteAction.FavoriteMovies) {}
 
+
     override fun onMovieItemClick(movieId: Int) {
         findNavController().navigate(
             R.id.action_favorite_destination_to_detail_destination,

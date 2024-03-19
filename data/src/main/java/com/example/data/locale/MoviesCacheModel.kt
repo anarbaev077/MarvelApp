@@ -20,4 +20,4 @@ data class MoviesCacheModel(
     @ColumnInfo(name = "vote_count") val voteCount: Int,
     @ColumnInfo(name = "video") val video: Boolean,
     @ColumnInfo(name = "rating") val rating: Double,
-)
+    )

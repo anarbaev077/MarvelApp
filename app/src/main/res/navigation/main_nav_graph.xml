@@ -27,7 +27,11 @@
         android:id="@+id/detail_destination"
         android:name="com.example.moviekinoapp.presentation.screens.detail.DetailScreenFragment"
         android:label="fragment_detail_screen"
-        tools:layout="@layout/fragment_detail_screen" />
+        tools:layout="@layout/fragment_detail_screen" >
+        <action
+            android:id="@+id/action_detail_destination_self"
+            app:destination="@id/detail_destination" />
+    </fragment>
     <fragment
         android:id="@+id/person_destination"
         android:name="com.example.moviekinoapp.presentation.screens.person.PersonScreenFragment"
@@ -49,7 +53,7 @@
         android:id="@+id/search_destination"
         android:name="com.example.moviekinoapp.presentation.screens.search.SearchFragment"
         android:label="fragment_search"
-        tools:layout="@layout/fragment_search" >
+        tools:layout="@layout/fragment_search_screen" >
         <action
             android:id="@+id/action_search_destination_to_detail_destination"
             app:destination="@id/detail_destination" />
