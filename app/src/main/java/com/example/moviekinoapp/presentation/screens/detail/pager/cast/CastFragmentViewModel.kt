@@ -36,7 +36,6 @@ class CastFragmentViewModel @Inject constructor(
             }
 
             val castDetails = castResponseDeffered.await()
-            Log.d("castDetail","$castDetails")
             if (castDetails.isSuccess){
                 _uiAction.emit(
                     CastAction.FetchCastDetail(

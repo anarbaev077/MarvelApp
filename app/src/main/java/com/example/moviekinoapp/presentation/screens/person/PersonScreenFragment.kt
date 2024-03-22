@@ -24,7 +24,7 @@ class PersonScreenFragment : Fragment() {
         ActorsAdapter()
     }
 
-    private val viewModel: PersonScreenViewModel by viewModels()
+    private val viewModel: PersonViewModel by viewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

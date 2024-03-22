@@ -1,6 +1,5 @@
 package com.example.moviekinoapp.presentation.screens.favorite
 
-import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.domain.use_cases.locale.fetcht.all.saved.FetchAllSavedUseCase
@@ -14,7 +13,7 @@ import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-class FavoriteMoviesViewModel @Inject constructor(
+class FavoritesViewModel @Inject constructor(
     private val fetchAllSavedUseCase: FetchAllSavedUseCase
 ) : ViewModel() {
 

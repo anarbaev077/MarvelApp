@@ -6,23 +6,22 @@
     android:layout_height="wrap_content">
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/personsRv"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:id="@+id/moviesRv"
+        android:layout_width="184dp"
+        android:layout_height="230dp"
+        android:layout_margin="3dp"
         android:elevation="8dp"
         app:cardCornerRadius="22sp"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="vertical">
 
             <androidx.cardview.widget.CardView
-                android:layout_width="130dp"
+                android:layout_width="184dp"
                 android:layout_height="130dp"
                 app:cardCornerRadius="20dp">
 
@@ -42,33 +41,48 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/nameActor"
+                    android:id="@+id/nameMovie"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/comfortaa"
-                    android:textSize="22sp"
+                    android:textSize="14sp"
                     android:textStyle="bold" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
                     android:orientation="horizontal">
 
                     <View
                         android:id="@+id/innerLine"
-                        android:layout_width="match_parent"
+                        android:layout_width="180dp"
                         android:layout_height="2dp"
                         android:background="#DFB6B2" />
 
                 </LinearLayout>
 
-                <TextView
-                    android:id="@+id/title_persons"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:fontFamily="@font/comfortaa"
-                    android:textSize="16sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/published"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/comfortaa"
+                        android:text="@string/published"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/releaseDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="3dp"
+                        android:fontFamily="@font/comfortaa"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -81,9 +95,10 @@
                         android:src="@drawable/star_icon_for_persons" />
 
                     <TextView
-                        android:id="@+id/star_for_persons"
+                        android:id="@+id/ratingMovies"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
                         android:fontFamily="@font/comfortaa"
                         android:textSize="22sp">
 

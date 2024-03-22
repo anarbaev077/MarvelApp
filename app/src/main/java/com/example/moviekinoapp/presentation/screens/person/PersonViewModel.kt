@@ -12,7 +12,7 @@ import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-class PersonScreenViewModel @Inject constructor(
+class PersonViewModel @Inject constructor(
     private val popularPersonUseCase: FetchPersonActorsMovie
 ) : ViewModel() {
 

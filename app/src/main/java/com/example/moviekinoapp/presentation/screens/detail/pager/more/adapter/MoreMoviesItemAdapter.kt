@@ -55,7 +55,7 @@ class MoreMoviesItemAdapter(
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MoviesItemViewHolder {
         val movieItem = LayoutInflater.from(parent.context).inflate(
             when (itemTypes) {
-                MoreMovieItemTypes.TOP_RATED -> R.layout.movie_peeking_item
+                MoreMovieItemTypes.TOP_RATED -> R.layout.list_for_latest_movies
             },
             parent,
             false

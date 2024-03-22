@@ -12,12 +12,13 @@
     <string name="trailer">Трейлеры</string>
     <string name="cast">Актеры</string>
     <string name="More">Еще</string>
-    <string name="popular_actors_today">Популярные актеры:</string>
-    <string name="release_date">Было опубликовано:</string>
-    <string name="vote_average">Популярность:</string>
-    <string name="runtime">Время:</string>
-    <string name="favorite_movies">Ваши киношки:</string>
+    <string name="popular_actors_today">Популярные актеры</string>
+    <string name="release_date">Было опубликовано</string>
+    <string name="vote_average">Популярность</string>
+    <string name="runtime">Время</string>
+    <string name="favorite_movies">Ваши кино</string>
     <string name="nn">ТРЕЙЛЕРЫ БУДУТ ОБНОВЛЕНЫ В 2024.07.01</string>
     <string name="kk">БУДЕТ ОБНОВЛЕН В 2024.07.01</string>
-    <string name="published">Опубликовано:</string>
+    <string name="published">Опубликовано</string>
+    <string name="published_">Опубл.</string>
 </resources>

@@ -16,7 +16,7 @@ import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-class HomeScreenViewModel @Inject constructor(
+class HomeViewModel @Inject constructor(
     private val fetchPopularMoviesUseCase: FetchPopularMovieUseCase,
     private val fetchNowPlayingMoviesUseCase: FetchNowPlayingMovieUseCase,
     private val fetchTopRatedMovieUseCase: FetchTopRatedMovieUseCase,

@@ -15,7 +15,7 @@ import com.example.moviekinoapp.R
 import com.example.moviekinoapp.databinding.FragmentSearchScreenBinding
 import com.example.moviekinoapp.presentation.screens.home.HomeScreenEvent
 import com.example.moviekinoapp.presentation.screens.home.HomeScreenFragment
-import com.example.moviekinoapp.presentation.screens.home.HomeScreenViewModel
+import com.example.moviekinoapp.presentation.screens.home.HomeViewModel
 import com.example.moviekinoapp.presentation.screens.home.adapter.ItemOnClickListeners
 import com.example.moviekinoapp.presentation.screens.home.adapter.MovieItemTypes
 import com.example.moviekinoapp.presentation.screens.home.adapter.MoviesItemAdapter
@@ -34,7 +34,7 @@ class SearchFragment : Fragment(), ItemOnClickListeners {
         MoviesItemAdapter(MovieItemTypes.TRENDING, this)
     }
 
-    private val viewModelHome: HomeScreenViewModel by viewModels()
+    private val viewModelHome: HomeViewModel by viewModels()
 
     private val viewModel: SearchViewModel by viewModels()
 

@@ -1,7 +1,6 @@
 package com.example.moviekinoapp.presentation.screens.home
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -32,7 +31,7 @@ class HomeScreenFragment : Fragment(), ItemOnClickListeners {
     private val binding: FragmentHomeScreenBinding by lazy {
         FragmentHomeScreenBinding.inflate(layoutInflater)
     }
-    private val viewModel: HomeScreenViewModel by viewModels()
+    private val viewModel: HomeViewModel by viewModels()
 
     private val latestAdapter: MoviesItemAdapter by lazy {
         MoviesItemAdapter(MovieItemTypes.LATEST, this)
@@ -95,8 +94,8 @@ class HomeScreenFragment : Fragment(), ItemOnClickListeners {
     }
 
     private fun setupLatestMoviesUi() = with(binding.latestMoviesBlock) {
-        moviesRv.layoutManager = PeekingLinearLayoutManager(requireContext())
-        moviesRv.adapter = latestAdapter
+        moviesTrendingTodayRv.layoutManager = PeekingLinearLayoutManager(requireContext())
+        moviesTrendingTodayRv.adapter = latestAdapter
     }
 
     private fun setupTrendingTodayMoviesUi() = with(binding) {

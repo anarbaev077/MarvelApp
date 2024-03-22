@@ -16,7 +16,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <com.facebook.shimmer.ShimmerFrameLayout
@@ -66,7 +66,7 @@
 
                     <include
                         android:id="@+id/latestMoviesBlock"
-                        layout="@layout/movies_list_block"/>
+                        layout="@layout/movies_default_list_block"/>
 
                     <include
                         android:id="@+id/trendingTodayMoviesBlock"

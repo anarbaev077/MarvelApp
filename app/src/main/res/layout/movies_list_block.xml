@@ -28,6 +28,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/listHeaderFor"
-        tools:listitem="@layout/movie_peeking_item" />
+        tools:listitem="@layout/list_for_latest_movies" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -16,7 +16,7 @@ import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
 
 @AndroidEntryPoint
-class CastDetailFragment : Fragment() {
+class CastFragment : Fragment() {
 
     private val binding: FragmentCastDetailBinding by lazy {
         FragmentCastDetailBinding.inflate(layoutInflater)

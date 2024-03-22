@@ -57,11 +57,11 @@ class MoviesItemAdapter(
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MoviesItemViewHolder {
         val movieItem = LayoutInflater.from(parent.context).inflate(
             when (itemTypes) {
-                MovieItemTypes.LATEST -> R.layout.movie_peeking_item
-                MovieItemTypes.TRENDING -> R.layout.movie_peeking_item
-                MovieItemTypes.TOP_RATED -> R.layout.movie_peeking_item
-                MovieItemTypes.UPCOMING -> R.layout.movie_peeking_item
-                MovieItemTypes.FAVORITES -> R.layout.movie_peeking_item
+                MovieItemTypes.LATEST -> R.layout.list_for_latest_movies
+                MovieItemTypes.TRENDING -> R.layout.movie_default_items
+                MovieItemTypes.TOP_RATED -> R.layout.movie_default_items
+                MovieItemTypes.UPCOMING -> R.layout.movie_default_items
+                MovieItemTypes.FAVORITES -> R.layout.movies_for_fav
             },
             parent,
             false

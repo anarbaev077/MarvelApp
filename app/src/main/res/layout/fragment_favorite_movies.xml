@@ -21,14 +21,6 @@
             android:textStyle="bold"
             android:textSize="24sp"/>
 
-        <ImageView
-            android:id="@+id/deleteMovies"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="140dp"
-            android:layout_gravity="center"
-            android:src="@drawable/delete_icon"/>
-
     </LinearLayout>
 
 
@@ -37,10 +29,10 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:layout_margin="3dp"
         android:layout_gravity="center"
-        android:paddingHorizontal="12dp"
         app:spanCount="2"
-        tools:listitem="@layout/movie_default_items"
+        tools:listitem="@layout/movies_for_fav"
         app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"/>
 
 </LinearLayout>

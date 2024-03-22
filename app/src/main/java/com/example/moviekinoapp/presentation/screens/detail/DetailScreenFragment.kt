@@ -13,7 +13,7 @@ import com.example.moviekinoapp.databinding.FragmentDetailScreenBinding
 import com.example.moviekinoapp.databinding.FragmentMoreDetailBinding
 import com.example.moviekinoapp.presentation.screens.detail.DetailScreenAction.FetchDetailMovie
 import com.example.moviekinoapp.presentation.screens.detail.pager.adapter.ViewPagerAdapter
-import com.example.moviekinoapp.presentation.screens.detail.pager.cast.CastDetailFragment
+import com.example.moviekinoapp.presentation.screens.detail.pager.cast.CastFragment
 import com.example.moviekinoapp.presentation.screens.detail.pager.more.MoreDetailFragment
 import com.example.moviekinoapp.presentation.screens.detail.pager.trailer.TrailerDetailFragment
 import com.example.moviekinoapp.presentation.screens.home.HomeScreenFragment.Companion.DETAIL_ID_ARG
@@ -34,7 +34,7 @@ class DetailScreenFragment : Fragment() {
         FragmentMoreDetailBinding.inflate(layoutInflater)
     }
 
-    private val viewModel: DetailScreenViewModel by viewModels()
+    private val viewModel: DetailViewModel by viewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -85,7 +85,7 @@ class DetailScreenFragment : Fragment() {
 
         adapter.addFragment(TrailerDetailFragment(), "Trailer")
 
-        val castDetailFragment = CastDetailFragment().apply {
+        val castDetailFragment = CastFragment().apply {
             arguments = Bundle().apply {
                 putInt(DETAIL_ID_ARG, movieId ?: 0)
             }
